@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.utfpr.giuvane.controle.FXMLPrincipalController">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="Cadastros">
+            <items>
+              <MenuItem fx:id="miCadastrosCategorias" mnemonicParsing="false" onAction="#handleMenuItemCadastroCategorias" text="Categorias" />
+                  <MenuItem fx:id="miCadastrosClientes" mnemonicParsing="false" onAction="#handleMenuItemCadastroClientes" text="Clientes" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Processos">
+            <items>
+              <MenuItem fx:id="miProcessosLancamentos" mnemonicParsing="false" onAction="#handleMenuItemProcessosLancamentos" text="Lançamentos" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Graficos">
+            <items>
+              <MenuItem fx:id="miGraficosLancamentosMes" mnemonicParsing="false" onAction="#handleMenuItemGraficosLancamentos" text="Lançamentos por mês" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Relatórios">
+              <items>
+                <MenuItem fx:id="miRelatoriosQtdeLancamentosCliente" mnemonicParsing="false" text="Quantidade de Lançamentos por Cliente" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Opções">
+              <items>
+                <MenuItem fx:id="miSair" mnemonicParsing="false" onAction="#sair" text="Sair" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane fx:id="anchorPane" prefHeight="389.0" prefWidth="600.0" />
+   </children>
+</VBox>
